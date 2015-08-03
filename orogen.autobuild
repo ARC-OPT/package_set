@@ -1,0 +1,4 @@
+
+orogen_package 'control/orogen/wbc'
+orogen_package 'control/orogen/ctrl_lib'
+

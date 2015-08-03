@@ -1,0 +1,27 @@
+name: wbc_package_set
+
+version_control:
+    - control/wbc:
+      dfkigit: besman-rock/wbc.git
+      branch: master
+      
+    - control/orogen/wbc:
+      dfkigit: besman-rock/orogen-wbc.git
+      branch: master
+
+    - gui/wbc_ctrl_gui:
+      dfkigit: besman-rock/wbc_ctrl_gui.git
+      branch: master
+
+    - gui/wbc_status_gui:
+      dfkigit: besman-rock/wbc_status_gui.git
+      branch: master
+
+    - control/ctrl_lib:
+      dfkigit: besman-rock/ctrl_lib.git
+      branch: master
+
+    - control/orogen/ctrl_lib:
+      dfkigit: besman-rock/orogen-ctrl_lib.git
+      branch: master
+
