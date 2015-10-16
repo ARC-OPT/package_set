@@ -1,4 +1,5 @@
 
 orogen_package 'control/orogen/wbc'
 orogen_package 'control/orogen/ctrl_lib'
+orogen_package 'control/orogen/lissajous_generator'
 

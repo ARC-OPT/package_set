@@ -25,3 +25,8 @@ version_control:
       dfkigit: besman-rock/orogen-ctrl_lib.git
       branch: master
 
+    - control/orogen/lissajous_generator:
+      dfkigit: besman-rock/orogen-lissajous_generator.git
+      branch: master
+
+
