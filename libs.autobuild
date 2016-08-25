@@ -1,4 +1,6 @@
-
+ruby_package 'control/wbc_ruby' do |pkg|
+  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
+end
 cmake_package 'control/wbc'
 cmake_package 'control/ctrl_lib'
 
@@ -8,3 +10,5 @@ end
 cmake_package 'gui/wbc_status_gui' do |pkg|
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'scripts')
 end
+
+cmake_package 'data_processing/performance_evaluation'

@@ -29,4 +29,16 @@ version_control:
       dfkigit: besman-rock/orogen-lissajous_generator.git
       branch: master
 
+    - control/wbc_ruby:
+      dfkigit: wbc/wbc_ruby.git
+      branch: master
+
+    - data_processing/performance_evaluation:
+      dfkigit: wbc/performance_evaluation.git
+      branch: master
+
+    - data_processing/orogen/performance_evaluation:
+      dfkigit: wbc/orogen-performance_evaluation.git
+      branch: master
+
 
