@@ -2,11 +2,11 @@ name: wbc_package_set
 
 version_control:
     - control/wbc:
-      dfkigit: besman-rock/wbc.git
+      dfkigit: dfki-control/wbc.git
       branch: master
       
     - control/orogen/wbc:
-      dfkigit: besman-rock/orogen-wbc.git
+      dfkigit: dfki-control/orogen-wbc.git
       branch: master
 
     - gui/wbc_ctrl_gui:
@@ -18,15 +18,15 @@ version_control:
       branch: master
 
     - control/ctrl_lib:
-      dfkigit: besman-rock/ctrl_lib.git
+      dfkigit: dfki-control/ctrl_lib.git
       branch: master
 
     - control/orogen/ctrl_lib:
-      dfkigit: besman-rock/orogen-ctrl_lib.git
+      dfkigit: dfki-control/orogen-ctrl_lib.git
       branch: master
 
     - control/orogen/lissajous_generator:
-      dfkigit: besman-rock/orogen-lissajous_generator.git
+      dfkigit: dfki-control/orogen-lissajous_generator.git
       branch: master
 
     - control/wbc_ruby:
