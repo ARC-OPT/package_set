@@ -1,6 +1,7 @@
 
-orogen_package 'control/orogen/wbc'
+orogen_package 'control/orogen/wbc' do |pkg|
+   pkg.define "ROCK_USE_CXX11", "ON"
+end
 orogen_package 'control/orogen/ctrl_lib'
 orogen_package 'control/orogen/lissajous_generator'
-orogen_package 'data_processing/orogen/performance_evaluation'
 
