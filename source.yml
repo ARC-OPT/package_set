@@ -10,11 +10,11 @@ version_control:
       branch: master
 
     - gui/wbc_ctrl_gui:
-      dfkigit: besman-rock/wbc_ctrl_gui.git
+      dfkigit: wbc/wbc_ctrl_gui.git
       branch: master
 
     - gui/wbc_status_gui:
-      dfkigit: besman-rock/wbc_status_gui.git
+      dfkigit: wbc/wbc_status_gui.git
       branch: master
 
     - control/ctrl_lib:
