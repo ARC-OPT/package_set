@@ -17,14 +17,6 @@ version_control:
       dfkigit: wbc/wbc_status_gui.git
       branch: master
 
-    - control/ctrl_lib:
-      dfkigit: dfki-control/ctrl_lib.git
-      branch: master
-
-    - control/orogen/ctrl_lib:
-      dfkigit: dfki-control/orogen-ctrl_lib.git
-      branch: master
-
     - control/orogen/lissajous_generator:
       dfkigit: dfki-control/orogen-lissajous_generator.git
       branch: master
