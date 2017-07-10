@@ -1,10 +1,9 @@
 ruby_package 'control/wbc_ruby' do |pkg|
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
 end
-
 cmake_package 'gui/wbc_ctrl_gui' do |pkg|
-  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'scripts')
+  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
 end
 cmake_package 'gui/wbc_status_gui' do |pkg|
-  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'scripts')
+  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
 end
