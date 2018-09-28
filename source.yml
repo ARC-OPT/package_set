@@ -24,7 +24,3 @@ version_control:
     - control/wbc_ruby:
       dfkigit: wbc/wbc_ruby.git
       branch: master
-
-    - data_processing/orogen/data_analysis:
-      github: rock-data-processing/data_processing-orogen-data_analysis.git
-      branch: master
