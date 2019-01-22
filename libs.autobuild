@@ -7,3 +7,6 @@ end
 cmake_package 'gui/wbc_status_gui' do |pkg|
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
 end
+
+cmake_package 'control/ctrl_lib'
+cmake_package 'control/wbc'

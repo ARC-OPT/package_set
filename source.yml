@@ -2,11 +2,11 @@ name: wbc_package_set
 
 version_control:
     - control/wbc:
-      dfkigit: dfki-control/wbc.git
+      dfkigit: wbc/wbc.git
       branch: master
       
     - control/orogen/wbc:
-      dfkigit: dfki-control/orogen-wbc.git
+      dfkigit: wbc/orogen-wbc.git
       branch: master
 
     - gui/wbc_ctrl_gui:
@@ -17,10 +17,10 @@ version_control:
       dfkigit: wbc/wbc_status_gui.git
       branch: master
 
-    - control/orogen/lissajous_generator:
-      dfkigit: dfki-control/orogen-lissajous_generator.git
-      branch: master
-
     - control/wbc_ruby:
       dfkigit: wbc/wbc_ruby.git
+      branch: master
+
+    - control/orogen/task_activations:
+      dfkigit: wbc/orogen-task_activations.git
       branch: master

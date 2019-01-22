@@ -1,0 +1,7 @@
+if package_enabled?('orogen')
+   orogen_package 'control/orogen/task_activations'
+   orogen_package 'control/orogen/ctrl_lib'
+   orogen_package 'control/orogen/wbc'
+else
+    Autoproj.warn "oroGen is not enabled, skipping the oroGen packages"
+end
