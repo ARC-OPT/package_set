@@ -4,9 +4,17 @@ version_control:
     - control/wbc:
       dfkigit: wbc/wbc.git
       branch: master
+
+    - control/ctrl_lib:
+      dfkigit: wbc/ctrl_lib.git
+      branch: master
       
     - control/orogen/wbc:
       dfkigit: wbc/orogen-wbc.git
+      branch: master
+      
+    - control/orogen/ctrl_lib:
+      dfkigit: wbc/orogen-ctrl_lib.git
       branch: master
 
     - gui/wbc_ctrl_gui:
