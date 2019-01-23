@@ -32,3 +32,7 @@ version_control:
     - control/orogen/task_activations:
       dfkigit: wbc/orogen-task_activations.git
       branch: master
+
+    - control/qpOASES:
+      type: svn
+      url: https://projects.coin-or.org/svn/qpOASES/stable/3.2/
