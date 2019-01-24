@@ -10,16 +10,29 @@
 +Description: @PACKAGE_DESCRIPTION@
 +Version: @PACKAGE_VERSION@
 +Requires: @PKGCONFIG_REQUIRES@
-+Libs: -L${libdir} -l@TARGET_NAME@ @PKGCONFIG_LIBS@
++Libs: -L${libdir} @PKGCONFIG_LIBS@ -lqpOASES
 +Cflags: -I${includedir} @PKGCONFIG_CFLAGS@
-
 
 --- CMakeLists.txt
 +++ CMakeLists.txt
-@@ -125,6 +125,9 @@
-   PATTERN "*.ipp"
-   PATTERN ".svn" EXCLUDE)
-
+@@ -31,6 +31,8 @@
+ 
+ cmake_minimum_required(VERSION 2.6)
+ 
++add_compile_options(-fPIC)
++
+ PROJECT(qpOASES CXX)
+ SET(PACKAGE_NAME "qpOASES")
+ SET(PACKAGE_VERSION "3.2.0")
+@@ -94,7 +96,10 @@
+ endif("${isSystemDir}" STREQUAL "-1")
+ 
+ 
 +CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/${PACKAGE_NAME}.pc.in ${CMAKE_CURRENT_BINARY_DIR}/${PACKAGE_NAME}.pc @ONLY)
 +install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${PACKAGE_NAME}.pc DESTINATION lib/pkgconfig)
+ 
 +
+ ############################################################
+ #################### build and install #####################
+ ############################################################
+

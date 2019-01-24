@@ -3,6 +3,7 @@ cmake_package 'control/ctrl_lib'
 cmake_package 'control/wbc'
 
 # Solvers
+cmake_package 'control/wbc_solvers'
 cmake_package 'control/qpOASES'
 
 # Tools and gui's

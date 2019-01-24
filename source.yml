@@ -5,12 +5,20 @@ version_control:
       dfkigit: wbc/wbc.git
       branch: master
 
+    - control/wbc_solvers:
+      dfkigit: wbc/wbc_solvers.git
+      branch: master
+
     - control/ctrl_lib:
       dfkigit: wbc/ctrl_lib.git
       branch: master
       
     - control/orogen/wbc:
       dfkigit: wbc/orogen-wbc.git
+      branch: master
+
+    - control/orogen/wbc_solvers:
+      dfkigit: wbc/orogen-wbc_solvers.git
       branch: master
       
     - control/orogen/ctrl_lib:
