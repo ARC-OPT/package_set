@@ -1,6 +1,7 @@
 # Core
 cmake_package 'control/ctrl_lib'
 cmake_package 'control/wbc'
+cmake_package 'control/wbc_common'
 
 # Solvers
 cmake_package 'control/wbc_solvers'

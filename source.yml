@@ -5,6 +5,10 @@ version_control:
       dfkigit: wbc/wbc.git
       branch: master
 
+    - control/wbc_common:
+      dfkigit: wbc/wbc_common.git
+      branch: master
+
     - control/wbc_solvers:
       dfkigit: wbc/wbc_solvers.git
       branch: master
