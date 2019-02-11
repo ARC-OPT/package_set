@@ -47,6 +47,6 @@ version_control:
 
     - control/qpOASES:
       type: svn
-      url: https://projects.coin-or.org/svn/qpOASES/stable/3.2/
+      url: https://projects.coin-or.org/svn/qpOASES/stable/3.2
       patches:
         - $AUTOPROJ_SOURCE_DIR/patches/qpOASES.patch
