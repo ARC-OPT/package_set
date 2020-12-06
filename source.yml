@@ -37,10 +37,6 @@ version_control:
       dfkigit: wbc/wbc_status_gui.git
       branch: master
 
-    - control/wbc_ruby:
-      dfkigit: wbc/wbc_ruby.git
-      branch: master
-
     - control/orogen/task_activations:
       dfkigit: wbc/orogen-task_activations.git
       branch: master
