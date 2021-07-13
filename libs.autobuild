@@ -14,6 +14,10 @@ end
 cmake_package 'gui/wbc_status_gui' do |pkg|
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
 end
+cmake_package 'gui/wbc_gui' do |pkg|
+  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib/wbc_status_gui')
+  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib/wbc_ctrl_gui')
+end
 
 # Examples
 bundle_package 'bundles/wbc_examples'
