@@ -3,6 +3,7 @@ if package_enabled?('orogen')
    orogen_package 'control/orogen/ctrl_lib'
    orogen_package 'control/orogen/wbc'
    orogen_package 'control/orogen/wbc_solvers'
+   orogen_package 'deployments/orogen/wbc_examples_deployments'
 else
     Autoproj.warn "oroGen is not enabled, skipping the oroGen packages"
 end

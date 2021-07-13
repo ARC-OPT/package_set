@@ -1,6 +1,10 @@
 name: wbc_package_set
 
 version_control:
+    - bundles/wbc_examples:
+      dfkigit: wbc/bundle-wbc_examples.git
+      branch: master
+
     - control/wbc:
       dfkigit: wbc/wbc.git
       branch: master
@@ -43,6 +47,10 @@ version_control:
 
     - control/orogen/task_activations:
       dfkigit: wbc/orogen-task_activations.git
+      branch: master
+
+    - deployments/orogen/wbc_examples_deployments:
+      dfkigit: wbc/orogen-wbc_examples_deployments.git
       branch: master
 
     - control/qpOASES:
