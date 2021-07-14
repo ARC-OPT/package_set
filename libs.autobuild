@@ -1,19 +1,10 @@
 # Core
-cmake_package 'control/ctrl_lib'
 cmake_package 'control/wbc'
-cmake_package 'control/wbc_common'
 
 # Solvers
-cmake_package 'control/wbc_solvers'
 cmake_package 'control/qpOASES'
 
 # Tools and gui's
-cmake_package 'gui/wbc_ctrl_gui' do |pkg|
-  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
-end
-cmake_package 'gui/wbc_status_gui' do |pkg|
-  Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib')
-end
 cmake_package 'gui/wbc_gui' do |pkg|
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib/wbc_status_gui')
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib/wbc_ctrl_gui')

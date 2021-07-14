@@ -8,25 +8,9 @@ version_control:
     - control/wbc:
       dfkigit: wbc/wbc.git
       branch: master
-
-    - control/wbc_common:
-      dfkigit: wbc/wbc_common.git
-      branch: master
-
-    - control/wbc_solvers:
-      dfkigit: wbc/wbc_solvers.git
-      branch: master
-
-    - control/ctrl_lib:
-      dfkigit: wbc/ctrl_lib.git
-      branch: master
       
     - control/orogen/wbc:
       dfkigit: wbc/orogen-wbc.git
-      branch: master
-
-    - control/orogen/wbc_solvers:
-      dfkigit: wbc/orogen-wbc_solvers.git
       branch: master
       
     - control/orogen/ctrl_lib:
@@ -35,14 +19,6 @@ version_control:
 
     - gui/wbc_gui:
       dfkigit: wbc/gui-wbc_gui.git
-      branch: master
-
-    - gui/wbc_ctrl_gui:
-      dfkigit: wbc/wbc_ctrl_gui.git
-      branch: master
-
-    - gui/wbc_status_gui:
-      dfkigit: wbc/wbc_status_gui.git
       branch: master
 
     - control/orogen/task_activations:
