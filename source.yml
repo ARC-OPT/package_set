@@ -5,6 +5,10 @@ version_control:
       dfkigit: wbc/bundle-wbc_examples.git
       branch: master
 
+    - control/ctrl_lib:
+      dfkigit: wbc/ctrl_lib.git
+      branch: master
+
     - control/wbc:
       dfkigit: wbc/wbc.git
       branch: master

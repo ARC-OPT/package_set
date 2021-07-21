@@ -12,3 +12,6 @@ end
 
 # Examples
 bundle_package 'bundles/wbc_examples'
+
+# Control Libraries
+cmake_package 'control/ctrl_lib'
