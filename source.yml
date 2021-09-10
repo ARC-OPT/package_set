@@ -34,7 +34,7 @@ version_control:
       branch: master
 
     - control/qpOASES:
-      type: svn
-      url: https://projects.coin-or.org/svn/qpOASES/stable/3.2
+      github: coin-or/qpOASES
+      tag: releases/3.2.1
       patches:
         - $AUTOPROJ_SOURCE_DIR/patches/qpOASES.patch
