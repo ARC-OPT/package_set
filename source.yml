@@ -1,36 +1,20 @@
 name: wbc_package_set
 
 version_control:
-    - bundles/wbc_examples:
-      dfkigit: wbc/bundle-wbc_examples.git
-      branch: master
-
-    - control/ctrl_lib:
-      dfkigit: wbc/ctrl_lib.git
-      branch: master
-
     - control/wbc:
-      dfkigit: wbc/wbc.git
+      dfkigit: dfki-control/wbc/wbc.git
       branch: master
       
     - control/orogen/wbc:
-      dfkigit: wbc/orogen-wbc.git
+      dfkigit: dfki-control/wbc/orogen-wbc.git
       branch: master
       
     - control/orogen/ctrl_lib:
-      dfkigit: wbc/orogen-ctrl_lib.git
+      dfkigit: dfki-control/wbc/orogen-ctrl_lib.git
       branch: master
 
     - gui/wbc_gui:
-      dfkigit: wbc/gui-wbc_gui.git
-      branch: master
-
-    - control/orogen/task_activations:
-      dfkigit: wbc/orogen-task_activations.git
-      branch: master
-
-    - deployments/orogen/wbc_examples_deployments:
-      dfkigit: wbc/orogen-wbc_examples_deployments.git
+      dfkigit: dfki-control/wbc/gui-wbc_gui.git
       branch: master
 
     - control/qpOASES:
