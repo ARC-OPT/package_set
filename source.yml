@@ -1,5 +1,8 @@
 name: wbc_package_set
 
+imports:
+    - dfkigit: dfki-mechanics/hyrodyn/hyrodyn_package_set
+
 version_control:
     - control/wbc:
       dfkigit: dfki-control/wbc/wbc.git
