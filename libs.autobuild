@@ -1,5 +1,7 @@
 # Core
-cmake_package 'control/wbc'
+cmake_package 'control/wbc' do |pkg|
+   pkg.define("USE_HYRODYN", "1")
+end
 
 # Solvers
 cmake_package 'control/qpOASES'
