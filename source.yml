@@ -5,7 +5,7 @@ imports:
 
 version_control:
     - control/wbc:
-      dfkigit: dfki-control/wbc/wbc.git
+      github: ARC-OPT/wbc.git
       branch: master
       
     - control/orogen/wbc:
