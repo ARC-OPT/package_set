@@ -6,11 +6,11 @@ version_control:
       branch: master
       
     - control/orogen/wbc:
-      dfkigit: dfki-control/wbc/orogen-wbc.git
+      github: ARC-OPT/orogen-wbc.git
       branch: master
       
     - control/orogen/ctrl_lib:
-      dfkigit: dfki-control/wbc/orogen-ctrl_lib.git
+      github: ARC-OPT/orogen-ctrl_lib.git
       branch: master
 
     - gui/wbc_gui:
