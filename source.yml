@@ -5,6 +5,12 @@ version_control:
       github: ARC-OPT/wbc.git
       branch: master
       
+    - control/qpSWIFT:
+      github: qpSWIFT/qpSWIFT.git
+      branch: main
+      patches:
+        - $AUTOPROJ_SOURCE_DIR/patches/qpSWIFT.patch
+      
     - control/orogen/wbc:
       github: ARC-OPT/orogen-wbc.git
       branch: master
