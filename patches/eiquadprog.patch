@@ -1,0 +1,28 @@
+--- CMakeLists.txt
++++ CMakeLists.txt
+@@ -60,6 +60,9 @@ ADD_LIBRARY(${PROJECT_NAME} SHARED
+   src/eiquadprog.cpp
+   )
+ 
++CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/eiquadprog.pc.in ${CMAKE_CURRENT_BINARY_DIR}/eiquadprog.pc @ONLY)
++install(FILES ${CMAKE_CURRENT_BINARY_DIR}/eiquadprog.pc DESTINATION lib/pkgconfig)
++
+ IF(TRACE_SOLVER)
+   TARGET_COMPILE_DEFINITIONS(${PROJECT_NAME} PRIVATE TRACE_SOLVER)
+ ENDIF(TRACE_SOLVER)
+
+--- eiquadprog.pc.in
++++ eiquadprog.pc.in
+@@ -0,0 +1,11 @@
++prefix=@CMAKE_INSTALL_PREFIX@
++exec_prefix=@CMAKE_INSTALL_PREFIX@
++libdir=${prefix}/lib
++includedir=${prefix}/include
++
++Name: @PACKAGE_NAME@
++Description: @PACKAGE_DESCRIPTION@
++Version: @PACKAGE_VERSION@
++Requires: @PKGCONFIG_REQUIRES@
++Libs: -L${libdir} @PKGCONFIG_LIBS@ -leiquadprog
++Cflags: -I${includedir} @PKGCONFIG_CFLAGS@
+

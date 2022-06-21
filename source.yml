@@ -33,3 +33,5 @@ version_control:
       github: stack-of-tasks/eiquadprog.git
       branch: master
       with_submodules: true
+      patches:
+        - $AUTOPROJ_SOURCE_DIR/patches/eiquadprog.patch
