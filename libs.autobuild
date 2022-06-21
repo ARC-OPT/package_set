@@ -3,6 +3,7 @@ cmake_package 'control/wbc'
 
 # Solvers
 cmake_package 'control/qpOASES'
+cmake_package 'control/eiquadprog'
 cmake_package 'control/qpSWIFT' do |pkg|
   pkg.define 'QPDEMOS', 'OFF'
 end

@@ -28,3 +28,8 @@ version_control:
       tag: releases/3.2.1
       patches:
         - $AUTOPROJ_SOURCE_DIR/patches/qpOASES.patch
+
+    - control/eiquadprog:
+      github: stack-of-tasks/eiquadprog.git
+      branch: master
+      with_submodules: true
