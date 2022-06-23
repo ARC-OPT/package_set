@@ -1,5 +1,10 @@
 # Core
-cmake_package 'control/wbc'
+cmake_package 'control/wbc' do |pkg|
+   pkg.define 'USE_HYRODYN', '1'
+   pkg.define 'USE_EIQUADPROG', '1'
+   pkg.define 'USE_QPSWIFT', '1'
+   pkg.define 'USE_PYTHON', '1'
+end
 
 # Solvers
 cmake_package 'control/qpOASES'
