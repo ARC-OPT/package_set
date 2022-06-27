@@ -13,6 +13,12 @@ cmake_package 'control/qpSWIFT' do |pkg|
   pkg.define 'QPDEMOS', 'OFF'
 end
 
+# Robot Models
+cmake_package 'control/pinocchio' do |pkg|
+  pkg.define 'BUILD_PYTHON_INTERFACE', 'OFF'
+  pkg.define 'BUILD_UNIT_TESTS', 'OFF'
+end
+
 # Tools and gui's
 cmake_package 'gui/wbc_gui' do |pkg|
   Autoproj.env_add_path 'RUBYLIB', File.join(pkg.srcdir, 'lib/wbc_status_gui')

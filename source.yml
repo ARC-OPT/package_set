@@ -35,3 +35,10 @@ version_control:
       with_submodules: true
       patches:
         - $AUTOPROJ_SOURCE_DIR/patches/eiquadprog.patch
+
+    - control/pinocchio:
+      github: stack-of-tasks/pinocchio.git
+      branch: master
+      with_submodules: true
+      patches:
+        - $AUTOPROJ_SOURCE_DIR/patches/pinocchio.patch
