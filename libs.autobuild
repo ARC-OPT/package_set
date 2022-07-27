@@ -8,7 +8,9 @@ end
 
 # Solvers
 cmake_package 'control/qpOASES'
-cmake_package 'control/eiquadprog'
+cmake_package 'control/eiquadprog' do |pkg|
+  pkg.define 'INSTALL_PKG_CONFIG_FILE', 'OFF'
+end
 cmake_package 'control/qpSWIFT' do |pkg|
   pkg.define 'QPDEMOS', 'OFF'
 end
