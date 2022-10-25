@@ -38,5 +38,5 @@ version_control:
 
     - control/pinocchio:
       github: stack-of-tasks/pinocchio.git
-      branch: master
+      tag: v2.6.8
       with_submodules: true
