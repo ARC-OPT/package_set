@@ -20,7 +20,7 @@ version_control:
       branch: master
 
     - gui/wbc_gui:
-      dfkigit: dfki-control/wbc/gui-wbc_gui.git
+      github: ARC-OPT/wbc_gui.git
       branch: master
 
     - control/qpOASES:
