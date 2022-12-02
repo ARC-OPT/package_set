@@ -1,15 +1,23 @@
 # Core Lib: Use minimal install, disable all additional solver and robot models
 cmake_package 'control/wbc' do |pkg|
    pkg.define 'USE_HYRODYN', '0'
-   pkg.define 'USE_PINOCCHIO', '0'
+   pkg.define 'USE_KDL', '0'
    pkg.define 'USE_EIQUADPROG', '0'
    pkg.define 'USE_QPSWIFT', '0'
    pkg.define 'USE_PYTHON', '0'
+   pkg.define 'USE_RBDL', '0'
+   pkg.define 'USE_PROXQP', '0'
+   #pkg.define 'CMAKE_CXX_STANDARD', '14'
 end
 
 # Solvers
 cmake_package 'control/qpOASES'
 cmake_package 'control/eiquadprog'
+cmake_package 'control/proxqp' do |pkg|
+  pkg.define 'BUILD_TESTING', 'OFF'
+  pkg.define 'BUILD_PYTHON_INTERFACE', 'OFF'
+  pkg.define 'BUILD_WITH_VECTORIZATION_SUPPORT', 'OFF'
+end
 cmake_package 'control/qpSWIFT' do |pkg|
   pkg.define 'QPDEMOS', 'OFF'
 end

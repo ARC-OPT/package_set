@@ -15,6 +15,11 @@ version_control:
       github: ARC-OPT/orogen-wbc.git
       branch: master
       
+    - control/proxqp:
+      github: Simple-Robotics/proxsuite.git
+      branch: main
+      with_submodules: true
+      
     - control/orogen/ctrl_lib:
       github: ARC-OPT/orogen-ctrl_lib.git
       branch: master
