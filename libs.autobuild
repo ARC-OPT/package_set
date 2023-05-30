@@ -5,7 +5,7 @@ cmake_package 'control/wbc' do |pkg|
    pkg.define 'USE_EIQUADPROG', '0'
    pkg.define 'USE_QPSWIFT', '0'
    pkg.define 'USE_PYTHON', '0'
-   pkg.define 'USE_RBDL', '0'
+   pkg.define 'USE_PINOCCHIO', '0'
    pkg.define 'USE_PROXQP', '0'
    #pkg.define 'CMAKE_CXX_STANDARD', '14'
 end
@@ -23,9 +23,8 @@ cmake_package 'control/qpSWIFT' do |pkg|
 end
 
 # Robot Models
-cmake_package 'control/pinocchio' do |pkg|
-  pkg.define 'BUILD_PYTHON_INTERFACE', 'OFF'
-  pkg.define 'BUILD_UNIT_TESTS', 'OFF'
+cmake_package 'control/rbdl' do |pkg|
+  pkg.define 'RBDL_BUILD_ADDON_URDFREADER', 'ON'
 end
 
 # Tools and gui's
