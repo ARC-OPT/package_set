@@ -45,3 +45,10 @@ version_control:
       github: stack-of-tasks/pinocchio.git
       tag: v2.6.8
       with_submodules: true
+
+    - control/rbdl:
+      github: rbdl/rbdl.git
+      tag: v3.2.1
+      with_submodules: true
+      patches:
+        - $AUTOPROJ_SOURCE_DIR/patches/rbdl.patch
