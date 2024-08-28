@@ -6,6 +6,7 @@ end
 # Solvers
 cmake_package 'control/qpOASES'
 cmake_package 'control/pinocchio' do |pkg|
+  pkg.depends_on 'control/urdfdom'
   pkg.define 'BUILD_PYTHON_INTERFACE', 'OFF'
   pkg.define 'BUILD_UNIT_TESTS', 'OFF'
 end
