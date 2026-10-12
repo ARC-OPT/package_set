@@ -16,6 +16,7 @@ cmake_package 'control/proxqp' do |pkg|
   pkg.define 'BUILD_TESTING', 'OFF'
   pkg.define 'BUILD_PYTHON_INTERFACE', 'OFF'
   pkg.define 'BUILD_WITH_VECTORIZATION_SUPPORT', 'OFF'
+  pkg.depends_on 'libcereal'
 end
 cmake_package 'control/qpSWIFT' do |pkg|
   pkg.define 'QPDEMOS', 'OFF'
